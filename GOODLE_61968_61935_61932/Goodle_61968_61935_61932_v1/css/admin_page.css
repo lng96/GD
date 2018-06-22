@@ -1,0 +1,165 @@
+body {
+    background-color: #fefbd8;
+}
+
+h1 {
+    position: absolute;
+    top: -94px;
+    width: 150%;
+    border-bottom: 4px solid #618685;
+    margin: 0px;
+    text-align: center;
+    font-size: 4rem;
+    left: -25%;
+    padding-bottom: 1%;
+}
+
+#customers {
+    font-family: "Courier New", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #80ced6;
+    color: white;
+}
+
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #618685;
+    color: white;
+}
+
+
+
+h1 {
+    position: absolute;
+    top: -94px;
+    width: 150%;
+    border-bottom: 4px solid #618685;
+    margin: 0px;
+    text-align: center;
+    font-size: 4rem;
+    left: -25%;
+    padding-bottom: 1%;
+}
+
+#tables {
+    font-family: "Courier New", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tables td,
+#tables th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tables tr:nth-child(odd) {
+    background-color: #80ced6;
+    color: white;
+}
+
+
+#tables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #618685;
+    color: white;
+}
+
+
+
+#Button {
+    display: inline-block;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    margin: -2px;
+    background-color: inherit;
+    color: grey;
+    padding: 10px 16px;
+    width: 23%;
+    margin-top: 0px;
+    margin-right: 10px;
+    border: 1px solid #618685;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+td:nth-child(1) {
+    width: 20%
+}
+
+td:nth-child(2) {
+    width: 40%
+}
+
+td:nth-child(3) {
+    width: 40%
+}
+
+.Button {
+    display: inline-block;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    margin: -2px;
+    background-color: inherit;
+    color: grey;
+    padding: 10px 16px;
+    width: 23%;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 1px solid #618685;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.imageContainer {
+    position: absolute;
+    display: block;
+    width: 150%;
+    left: -25%;
+    border-top: 4px solid #618685;
+}
+
+img {
+    /*position: absolute;*/
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.exitBtn {
+    display: inline-block;
+    background-color: inherit;
+    color: grey;
+    padding: 10px 16px;
+    /* width: auto; */
+    border: none;
+    font-size: 20px;
+    border: 1px solid #618685;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 12px;
+}

@@ -1,0 +1,121 @@
+body {
+    background-color:#fefbd8;
+}
+
+.login {
+    position: absolute;
+    height: auto;
+    width: 80%;
+    padding: 2%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*margin: 0 auto;*/
+    display: block;
+    text-align: center;
+    /*border: 3px solid green;*/
+}
+
+.login .tablinks {
+    display: block;
+    background-color: inherit;
+    color: grey;
+    padding: 10px 16px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    border-bottom: 1px solid #618685;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    left: 30%;
+}
+
+.login button:hover {
+    background-color: #80ced6;
+    color: white;
+}
+
+h1 {
+    position: absolute;
+    top: -94px;
+    width: 150%;
+    border-bottom: 4px solid #618685;
+    margin: 0px;
+    text-align: center;
+    font-size: 4rem;
+    left: -25%;
+    padding-bottom: 1%;
+}
+
+#customers {
+    font-family: "Courier New", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #80ced6;
+    color: white;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #618685;
+    color: white;
+}
+
+.Button {
+    display: inline-block;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    margin: -2px;
+    background-color: inherit;
+    color: grey;
+    padding: 10px 16px;
+    width: 23%;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 1px solid #618685;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.imageContainer {
+    position: absolute;
+    display: block;
+    width: 150%;
+    left: -25%;
+    border-top: 4px solid #618685;
+}
+
+.exitBtn{
+    display: inline-block;
+    background-color: inherit;
+    color: grey;
+    padding: 10px 16px;
+    /* width: auto; */
+    border: none;
+    font-size: 20px;
+    border: 1px solid #618685;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 12px;
+
+}
+

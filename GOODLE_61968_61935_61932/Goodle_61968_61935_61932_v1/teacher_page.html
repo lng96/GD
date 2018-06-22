@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" type="text/css" href="css/teacher_page.css">
+    <script type="text/javascript" src="js/whitch_page.js"></script>
+
+</head>
+
+<body>
+    <a class="exitBtn" href="teacher_menu.html">Назад</a>
+    <div class="login">
+        <img src="logo.png">
+        <!-- <h1 style = "color: #78cad3"></h1> -->
+        <div class="imageContainer"> </div>
+        <h2> Добре дошли в нашата електронна система! </h2>
+        <table id="customers">
+            <tr>
+                <th> number </th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td> 1</td>
+                <td>Елена</td>
+                <td>Янкова</td>
+                <td>Алгебра</td>
+            </tr>
+            <tr>
+                <td> 2</td>
+                <td>Невена</td>
+                <td>Нешева</td>
+                <td>WEB</td>
+            </tr>
+             <tr>
+                <td> 3</td>
+                <td>Гергана</td>
+                <td>Христова</td>
+                <td>КАРХ</td>
+            </tr>
+            <tr>
+                <td> 4</td>
+                <td>Иван</td>
+                <td>Иванов</td>
+                <td>КАРХ</td>
+            </tr>
+            <tr>
+                <td> 5</td>
+                <td>Петър</td>
+                <td>Цветанов</td>
+                <td>Алгебра</td>
+            </tr>
+             <tr>
+                <td> 6</td>
+                <td>Ивайла</td>
+                <td>Иванова</td>
+                <td>WEB</td>
+            </tr>
+        </table>
+        <h2> Сортирайте по дисциплината, която преподавате, за да видите кои студенти са я записали</h2>
+          <select class="Button" onchange="sortingTable5()">
+            <option value="Дисциплина">Дисциплина</option>
+            <option value="WEB">WEB</option>
+            <option value="КАРХ">КАРХ</option>
+            <option value="Алгебра">Алгебра</option>
+        </select>
+    </div>
+</body>
+
+</html>

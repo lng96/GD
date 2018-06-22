@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" type="text/css" href="css/student_page.css">
+    <script type="text/javascript" src="js/whitch_page.js"></script>
+</head>
+
+<body>
+    <a class="exitBtn" href="student_menu.html">Назад</a>
+    <div class="login">
+        <img src="logo.png">
+        <!-- <h1 style = "color: #78cad3"></h1> -->
+        <div class="imageContainer"> </div>
+        <h2> Добре дошли в нашата електронна система! </h2>
+        <table id="customers">
+            <tr>
+                <th>Title</th>
+                <th>Credits</th>
+                <th>Lecturer</th>
+                <th>Description</th>
+                <th>Year</th>
+                <th> Catagory </th>
+                <th> Graduation Level</th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td>Programing with Go</td>
+                <td>5</td>
+                <td>Николай Батчийски</td>
+                <td>Let's learn Go</td>
+                <td>4</td>
+                <td> ОКН </td>
+                <td> БАКАЛАВЪР </td>
+                <td>
+                    <select>
+                        <option value=""> </option>
+                        <option value="zapisan"> записан </option>
+                        <option value="rezerva"> резерва </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>AKDU</td>
+                <td>3.5</td>
+                <td>Светлин Иванов</td>
+                <td>Let's Graduate</td>
+                <td>3</td>
+                <td> М </td>
+                <td> БАКАЛАВЪР </td>
+                <td>
+                    <select>
+                        <option value=""> </option>
+                        <option value="zapisan"> записан </option>
+                        <option value="rezerva"> резерва </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Web technologies</td>
+                <td>4</td>
+                <td>Милен Петров</td>
+                <td>Let's learn the web</td>
+                <td>3</td>
+                <td> ЯКН </td>
+                <td> МАГИСТЪР</td>
+                <td>
+                    <select>
+                        <option value=""> </option>
+                        <option value="zapisan"> записан </option>
+                        <option value="rezerva"> резерва </option>
+                    </select>
+                </td>
+                <tr>
+                    <td>Компютърни архитектури</td>
+                    <td>2</td>
+                    <td>Иван Иванов</td>
+                    <td>Let's learn the network</td>
+                    <td>3</td>
+                    <td> ОКН </td>
+                    <td> БАКАЛАВЪР </td>
+                    <td>
+                        <select>
+                            <option value=""> </option>
+                            <option value="zapisan"> записан </option>
+                            <option value="rezerva"> резерва </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Алгебра</td>
+                    <td>2.5</td>
+                    <td>Цветан Цветанов</td>
+                    <td>Let's learn the algebra</td>
+                    <td>2</td>
+                    <td> ПМ </td>
+                    <td> БАКАЛАВЪР </td>
+                    <td>
+                        <select>
+                            <option value=""> </option>
+                            <option value="zapisan"> записан </option>
+                            <option value="rezerva"> резерва </option>
+                        </select>
+                    </td>
+                </tr>
+            </tr>
+        </table>
+        <h2> Сортирай по: </h2>
+        <select class="Button" onchange="sortingTable()">
+            <option value="Lecturer">Lecturer</option>
+            <option value="Милен Петров"> Милен Петров </option>
+            <option value="Николай Батчийски"> Николай Батчийски </option>
+            <option value="Светлин Иванов"> Светлин Иванов </option>
+            <option value="Иван Иванов"> Иван Иванов </option>
+            <option value="Цветан Цветанов"> Цветан Цветанов </option>
+
+
+        </select>
+        <select class="Button" onchange="sortingTable2()">
+            <option value="Year">Year</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <select class="Button" onchange="sortingTable3()">
+            <option value="Category">Category</option>
+            <option value="ОКН">ОКН</option>
+            <option value="М">М</option>
+            <option value="ЯКН">ЯКН</option>
+            <option value="ПМ">ПМ</option>
+
+        </select>
+        <select class="Button" onchange="sortingTable4()">
+            <option value="Graduation Level">Graduation Level</option>
+            <option value="БАКАЛАВЪР"> БАКАЛАВЪР </option>
+            <option value="МАГИСТЪР"> МАГИСТЪР </option>
+        </select> 
+    </div>
+    </div>
+</body>
+
+</html>

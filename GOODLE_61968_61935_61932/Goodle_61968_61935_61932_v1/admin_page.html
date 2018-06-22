@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" type="text/css" href="css/admin_page.css">
+</head>
+
+<body>
+    <a class="exitBtn" href="FirstPage.html">Изход</a>
+    <div class="login">
+        <!-- <h1 style="color: #78cad3">Goodle</h1> -->
+        <img src="logo.png">
+        <div class="imageContainer"> </div>
+
+        <h2> Добре дошли в нашата електронна система! </h2>
+        <table id="customers">
+            <tr>
+                <th>Title</th>
+                <th>Credits</th>
+                <th>Lecturer</th>
+                <th>Description</th>
+                <th>Year</th>
+                <th> Catagory </th>
+                <th> Graduation Level</th>
+            </tr>
+            <tr>
+                <td>Programing with Go</td>
+                <td>5</td>
+                <td>Николай Батчийски</td>
+                <td>Let's learn Go</td>
+                <td>4</td>
+                <td> ОКН </td>
+                <td> БАКАЛАВЪР </td>
+            </tr>
+            <tr>
+                <td>AKDU</td>
+                <td>3.5</td>
+                <td>Светлин Иванов</td>
+                <td>Let's Graduate</td>
+                <td>3</td>
+                <td> М </td>
+                <td> БАКАЛАВЪР </td>
+            </tr>
+            <tr>
+                <td>Web technologies</td>
+                <td>4</td>
+                <td>Милен Петров</td>
+                <td>Let's learn the web</td>
+                <td>3</td>
+                <td> ЯКН </td>
+                <td> МАГИСТЪР</td>
+            </tr>
+            <tr>
+                <td>Компютърни архитектури</td>
+                <td>2</td>
+                <td>Иван Иванов</td>
+                <td>Let's learn the network</td>
+                <td>3</td>
+                <td> ОКН </td>
+                <td> БАКАЛАВЪР </td>
+            </tr>
+            <tr>
+                    <td>Алгебра</td>
+                    <td>2.5</td>
+                    <td>Цветан Цветанов</td>
+                    <td>Let's learn the algebra</td>
+                    <td>2</td>
+                    <td> ПМ </td>
+                    <td> БАКАЛАВЪР </td>
+                </tr>
+        </table>
+        <h2> Сортирай по: </h2>
+        <select class="Button" onchange="sortingTable()">
+            <option value="Lecturer">Lecturer</option>
+            <option value="Милен Петров"> Милен Петров </option>
+            <option value="Николай Батчийски"> Николай Батчийски </option>
+            <option value="Светлин Иванов"> Светлин Иванов </option>
+            <option value="Иван Иванов"> Иван Иванов </option>
+            <option value="Цветан Цветанов"> Цветан Цветанов </option>
+
+        </select>
+        <select class="Button" onchange="sortingTable2()">
+            <option value="Year">Year</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <select class="Button" onchange="sortingTable3()">
+            <option value="Category">Category</option>
+            <option value="ОКН">ОКН</option>
+            <option value="М">М</option>
+            <option value="ЯКН">ЯКН</option>
+            <option value="ПМ">ПМ</option>
+        </select>
+        <select class="Button" onchange="sortingTable4()">
+            <option value="Graduation Level">Graduation Level</option>
+            <option value="БАКАЛАВЪР"> БАКАЛАВЪР </option>
+            <option value="МАГИСТЪР"> МАГИСТЪР </option>
+        </select>
+        <br>
+        <hr>
+        <br>
+        <h2>Студенти записали дадения предмет</h2>
+        <table id="tables">
+           <tr>
+                <th> Number </th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td> 1</td>
+                <td>Елена</td>
+                <td>Янкова</td>
+                <td>Алгебра</td>
+            </tr>
+            <tr>
+                <td> 2</td>
+                <td>Невена</td>
+                <td>Нешева</td>
+                <td>WEB</td>
+            </tr>
+             <tr>
+                <td> 3</td>
+                <td>Гергана</td>
+                <td>Христова</td>
+                <td>Компютърни архитектури</td>
+            </tr>
+            <tr>
+                <td> 4</td>
+                <td>Иван</td>
+                <td>Иванов</td>
+                <td>Компютърни архитектури</td>
+            </tr>
+            <tr>
+                <td> 5</td>
+                <td>Петър</td>
+                <td>Цветанов</td>
+                <td>Алгебра</td>
+            </tr>
+             <tr>
+                <td> 6</td>
+                <td>Ивайла</td>
+                <td>Иванова</td>
+                <td>WEB</td>
+            </tr>
+        </table>
+<!--         <h2> Сортирайте по дисциплина, за да видите кои студенти са я записали</h2>
+        <select id="Button">
+            <option value="Дисциплина">Дисциплина</option>
+            <option value="1">Go</option>
+            <option value="2">Икономическа информатика</option>
+        </select> -->
+    </div>
+<!--     <br>
+    <br>
+    <a href="new.html">Добавете нова дисциплина</a> -->
+</body>
+
+</html>

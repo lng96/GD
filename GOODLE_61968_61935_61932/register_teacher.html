@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" type="text/css" href="css/register_student.css">
+</head>
+
+<body>
+        <a class="exitBtn" href="FirstPage.html">Назад</a>
+
+    <img src="logo.png">
+    <!-- <h1 style = "color: #78cad3"></h1> -->
+    <div class="imageContainer"> </div>
+        <h1>Регистрация</h1>
+    <div class="form" onsubmit="return validate()">
+        <div>
+            <form class="input">
+                <p>
+                    <input type="text" id="username" placeholder="Потребителско име">
+                </p>
+                <p>
+                    <input type="text" id="email" placeholder="Email">
+                </p>
+                <p>
+                    <input type="text" id="name" placeholder="Име">
+                </p>
+                <p>
+                    <input type="text" id="secondname" placeholder="Презиме">
+                </p>
+                <p>
+                    <input type="text" id="lastname" placeholder="Фамилия">
+                </p>
+                <p>
+                    <input type="text" id="password" placeholder="Парола">
+                </p>
+                <p>
+                    <input type="text" id="cpassword" placeholder="Повтори паролата">
+                </p>
+                <p>
+                     <input type="button" class="button" value="Регистрация">
+                </p>
+                <br>
+                <p id="error" style="color: red"></p>
+            </form>
+        </div>
+    </div>
+    <script>
+    function validate() {
+        var pass, cpass, text, email;
+
+        pass = document.getElementById("password").value;
+        cpass = document.getElementById("cpassword").value;
+        email = document.getElementById("email").value;
+
+        if (validateEmail(email) && pass == cpass) {
+
+            document.location.href = 'success_registration.html';
+        } else {
+            text = "Invalid input";
+            document.getElementById("error").innerHTML = text;
+
+        }
+    }
+
+
+    function validateEmail(email) {
+
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+    }
+    </script>
+</body>
+
+</html>
